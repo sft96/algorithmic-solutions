@@ -42,6 +42,7 @@ class Solution(object):
                         self.value = self.meaning
             elif self.nums[self.meaning] + self.nums[self.value + 1] == self.target:
                 return [self.meaning, self.value + 1]
+                break
 
 
 solution = Solution()
