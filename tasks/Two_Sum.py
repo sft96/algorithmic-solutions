@@ -28,21 +28,23 @@
 # O(n^2)
 class Solution(object):
     def twoSum(self, nums, target):
-        self.nums = nums
-        self.target = target
-        self.meaning = 0
-        self.value = 0
+        meaning = 0
+        value = 0
         while True:
-            if self.nums[self.meaning] + self.nums[self.value + 1] != self.target:
-                self.value += 1
-                if self.value == len(self.nums) - 1:
-                    self.meaning += 1
-                    self.value = 0
-                    if self.meaning > self.value:
-                        self.value = self.meaning
-            elif self.nums[self.meaning] + self.nums[self.value + 1] == self.target:
-                return [self.meaning, self.value + 1]
+            if nums[meaning] + nums[value + 1] != target:
+                value += 1
+                if value == len(nums) - 1:
+                    meaning += 1
+                    value = 0
+                    if meaning > value:
+                        value = meaning
+            else:
+                return [meaning, value + 1]
                 break
+
+
+solution = Solution()
+print(solution.twoSum([2, 7, 11, 15], 9))
 
 
 solution = Solution()
