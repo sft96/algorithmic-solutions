@@ -4,9 +4,9 @@
 # array = [1, 3, 5, 8, 9, 12, 16]
 # target = 12
 
-# Найти индекс target в массиве array за O(log n)
+# Найти индекс target в массиве array за O(logn)
 
-# O(log n)
+# O(logn)
 def BSearch(array, target):
     left_index = 0
     right_index = len(array)
