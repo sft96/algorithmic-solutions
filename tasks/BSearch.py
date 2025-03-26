@@ -7,8 +7,6 @@
 # Найти индекс target в массиве array за O(log n)
 
 # O(log n)
-array = [1, 3, 5, 8, 9, 12, 16]
-target = 12
 def BSearch(array, target):
     left_index = 0
     right_index = len(array)
@@ -23,4 +21,4 @@ def BSearch(array, target):
     return None
 
 
-print(BSearch(array, target))
+print(BSearch([1, 3, 5, 8, 9, 12, 16], 12))
