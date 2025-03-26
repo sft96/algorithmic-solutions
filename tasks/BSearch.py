@@ -9,7 +9,6 @@
 # O(log n)
 array = [1, 3, 5, 8, 9, 12, 16]
 target = 12
-description = f"The number {target} is missing from the array"
 def BSearch(array, target):
     left_index = 0
     right_index = len(array)
@@ -21,7 +20,7 @@ def BSearch(array, target):
             left_index = middle + 1
         elif target < array[middle]:
             right_index = middle
-    return description
+    return None
 
 
 print(BSearch(array, target))
