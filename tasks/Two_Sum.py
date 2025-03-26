@@ -40,7 +40,6 @@ class Solution(object):
                         value = meaning
             else:
                 return [meaning, value + 1]
-                break
 
 
 solution = Solution()
