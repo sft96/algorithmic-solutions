@@ -28,8 +28,7 @@
 # O(n^2)
 class Solution(object):
     def twoSum(self, nums, target):
-        meaning = 0
-        value = 0
+        meaning, value = 0, 0
         while True:
             if nums[meaning] + nums[value + 1] != target:
                 value += 1
