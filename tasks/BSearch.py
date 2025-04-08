@@ -8,16 +8,16 @@
 
 # O(logn)
 def BSearch(array, target):
-    left_index = 0
-    right_index = len(array)
-    while right_index > left_index:
-        middle = (left_index + (right_index - 1)) // 2
+    left = 0
+    right = len(array)
+    while right > left:
+        middle = (left + (right - 1)) // 2
         if target == array[middle]:
             return middle
         elif target > array[middle]:
-            left_index = middle + 1
+            left = middle + 1
         elif target < array[middle]:
-            right_index = middle
+            right = middle
     return None
 
 
