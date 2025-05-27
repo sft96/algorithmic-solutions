@@ -69,8 +69,8 @@ class Solution(object):
         }
         for old_str, new_str in roman_except.items():
             s = s.replace(old_str, new_str)
-        for start_str, end_str in roman_dict.items():
-            s = s.replace(start_str, end_str)
+        for old_str, new_str in roman_dict.items():
+            s = s.replace(old_str, new_str)
         result = s.split(',')
         while '' in result:
             result.remove('')
